@@ -1,4 +1,5 @@
 # Resize_Image_Canvas
+Only for WINDOWS.
 
 Small python script that resizes the canvas of all the images of a directory (and sub-directories) to the next multiple of N number.
 

@@ -1,3 +1,6 @@
+# AUTHOR: Martín Pane (martintayx@gmail.com)
+# DATE: 10-Nov-16
+
 # Command from IM to execute:
 # convert imgPath -background none -gravity center -extent newWidthxnewHeight imgPath
 
@@ -5,8 +8,8 @@ import os
 import subprocess
 from fnmatch import fnmatch
 
-root 	= 'C:\Program-Files\sprite\_Sprites'
-pattern = "*.png"
+root 	= 'Introduce your directory path here'
+pattern = "Introduce your file extension here. (E.g.: *.png)"
 
 multipleToResizeTo = 4
 
@@ -42,7 +45,7 @@ for path, subdirs, files in os.walk(root):
 				
 			print('file: ' + imgPath + ' ---> new size: ' + str(newWidth) + 'x' + str(newHeight))
 			
-			# Calls convert IM operation - UNCOMMENT TO USE
+			# Calls convert IM operation - UNCOMMENT TO USE (Commented for safety. Try it first on a test directory)
 			# subprocess.call("convert " + imgPath + " -background none -gravity center -extent " + str(newWidth) + "x" + str(newHeight) + " " + imgPath, shell=True)
 
 print
